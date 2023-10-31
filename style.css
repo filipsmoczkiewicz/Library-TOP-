@@ -20,6 +20,42 @@ body {
     flex-wrap: wrap;
 }
 
+.add-new-book-card {
+    background-color: #135419;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #aaa;
+    text-align: center;
+    width: 22%; /* Approximately 4 cards per row, adjust as needed */
+    min-width: 200px; /* Minimum width for responsiveness */
+    aspect-ratio: 2 / 3; /* Maintain 2/3 width-to-height ratio */
+    max-width: 22%; /* Limit maximum width for responsiveness */
+    cursor: pointer; /* Change the cursor to a pointer */
+    position: relative; /* Needed for proper positioning of the rotating element */
+    transition: transform 1.5s ease; /* Transition for smooth scaling and rotation */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Style the "+" sign within the card */
+.add-new-book-card .add-book-button {
+    font-size: 240px; /* Adjust the size as needed */
+    margin-top: 10px; /* Add some spacing above the "+" sign */
+    transition: transform 1.5s ease; /* Transition for smooth rotation */
+}
+
+/* Apply the hover effect */
+.add-new-book-card:hover {
+    transform: scale(1.33); /* Scale up to approximately 2/3 of the original size */
+}
+
+.add-new-book-card:hover .add-book-button {
+    transform: rotate(90deg); /* Rotate the "+" sign 90 degrees */
+}
+
+
 /* Style for the book cards */
 .book-card {
     background-color: #f0f0f0;

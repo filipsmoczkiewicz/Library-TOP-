@@ -9,12 +9,8 @@ class Book {
     }
 }
 
-// Sample books (you can add more)
-const book1 = new Book("Book 1", "Author 1", 200, true, getRandomColor());
-const book2 = new Book("Book 2", "Author 2", 300, false, getRandomColor());
-
 // Create an array to store the books
-const myLibrary = [book1, book2];
+const myLibrary = [];
 
 // Initial display
 displayLibrary();
@@ -40,11 +36,10 @@ function displayLibrary() {
 
     // Create a card for "Add a New Book"
     const addNewBookCard = document.createElement('div');
-    addNewBookCard.classList.add('book-card');
+    //addNewBookCard.classList.add('book-card');
     addNewBookCard.classList.add('add-new-book-card'); // You can add a specific class for styling if needed
     addNewBookCard.innerHTML = `
-        <h2>Add a New Book</h2>
-        <p>+</p>
+        <div class="add-book-button">+</div>
     `;
 
     // Add a click event listener to call addBookFromConsole
@@ -104,7 +99,7 @@ function addBookFromConsole() {
 }
 
 
-/* 
+/*
 // Function to generate a random book with random title, author, pages, and status
 function generateRandomBook() {
     const randomTitle = generateRandomString(10, 15);
@@ -140,4 +135,5 @@ function initializeWebpageWithRandomBooks() {
 
 // Call the initialization function
 initializeWebpageWithRandomBooks();
+
 */
