@@ -70,6 +70,52 @@ body {
     max-width: 22%; /* Limit maximum width for responsiveness */
 }
 
+/* CSS for the form container */
+.add-book-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust the width as needed */
+    max-width: 600px; /* Maximum width for responsiveness */
+    background-color: #fff; /* Background color of the form */
+    border: 2px solid #135419; /* Border color from the header */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px;
+}
+
+/* Style the form input fields, slider, and submit button as needed */
+.add-book-form input[type="text"],
+.add-book-form input[type="number"],
+.add-book-form input[type="checkbox"],
+.add-book-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.add-book-form button {
+    background-color: #135419;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.add-book-form button:hover {
+    background-color: #28B463; /* Change color on hover */
+}
+
+/* Style the form container for responsiveness */
+@media (max-width: 768px) {
+    .add-book-form-container {
+        width: 90%; /* Adjust for smaller screens */
+    }
+}
+
 /* Style for the footer */
 .footer {
     position: fixed;
